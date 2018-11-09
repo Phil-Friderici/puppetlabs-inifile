@@ -19,6 +19,7 @@ group :development, :unit_tests do
   gem 'puppetlabs_spec_helper',         :require => false
   gem 'rspec-puppet', '>= 2.3.2',       :require => false
   gem 'simplecov',                      :require => false
+  gem 'mocha', '1.3.0',                 :require => false # pin mocha for old rubies
 end
 group :system_tests do
   gem 'beaker-rspec',                  *location_for(ENV['BEAKER_RSPEC_VERSION'] || '>= 3.4')
